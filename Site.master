@@ -1,0 +1,105 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="SiteMaster, App_Web_l4zidieg" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>WESOCO</title>
+    <meta name="description" content="Wesoco for Oil services"/>
+<meta name="keywords" content="wesoco,oil,services,شركة خدمات بترولية,"/>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            color: #FFFFFF;
+            padding: 8px 0px 0px 0px;
+            margin: 0px auto;
+            text-align: center;
+            line-height: normal;
+            font-size: x-large;
+        }
+        .menu
+        {
+            font-weight: 700;
+        }
+        .menu
+        {
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        
+
+        <div class="header" style="background-image: url('/WebSiteITI2014/صور المشروع/form.jpg')">
+            <div class="title">
+                <h1 style="background-color: #3A4F63; background-image: url('/WebSiteITI2014/صور المشروع/form.jpg');" dir="ltr">
+                    <asp:Image ID="Image1" runat="server" Height="169px" 
+                        ImageUrl="~/صور المشروع/01.jpg" style="border-style: outset; border-color: #FFFFFF; margin-left: 0px; z-index: -1;" 
+                        Width="913px" BorderStyle="Outset" ImageAlign="Middle" />
+                    &nbsp;
+                </h1>
+            </div>
+            <div class="clear hideSkiplink">
+            <Marquee style="color:#FF0000; height: 54px; font-size: xx-large; font-weight: 700; font-family: Andalus; vertical-align: super; background-color: #ffffff;"> Welcome to Mobile Market  </Marquee>
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home"/>
+                        <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="~/ABOUT US.aspx">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="" Text="Products" Value="Courses" Selectable="False">
+                            <asp:MenuItem NavigateUrl="~/Samsung.aspx" Text="Samsung" 
+                                Value="Scientific materials">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Nokia.aspx" 
+                                Text="Nokia" Value="Nokia"></asp:MenuItem>
+                            <asp:MenuItem Text="Lenovo" 
+                                Value="Lenovo" NavigateUrl="~/Lenovo.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Contact Us.aspx" Text="Contact Us" 
+                            Value="Contact Us"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+
+            </div>
+        </div>
+
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+
+            
+        <style>
+
+.styling{
+background-color:black;
+color:lime;
+font: bold 15px MS Sans Serif;
+padding: 3px;
+}
+-->
+</style>
+  
+  
+
+
+
+
+
+
+
+
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="style1">
+        
+        © 2022 Mobile Market, All Rights Reserved
+        
+    </div>
+    </form>
+</body>
+</html>
